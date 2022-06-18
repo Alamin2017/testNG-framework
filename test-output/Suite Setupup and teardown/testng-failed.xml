@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite Setupup and teardown]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="common.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test Before After Suite(failed)">
+    <classes>
+      <class name="testNG_practice.GroupsDemoTest2">
+        <methods>
+          <include name="dataTeardown"/>
+          <include name="dataSetup"/>
+          <include name="Test3"/>
+        </methods>
+      </class> <!-- testNG_practice.GroupsDemoTest2 -->
+    </classes>
+  </test> <!-- Test Before After Suite(failed) -->
+</suite> <!-- Failed suite [Suite Setupup and teardown] -->
