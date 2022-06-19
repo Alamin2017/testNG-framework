@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="chaldal_test.test_case">
+      <class name="Excel_DataDrivenTest.ReadingDataFromExcel2">
         <methods>
-          <include name="gotochaldal"/>
-          <include name="test_product_categories_total"/>
-          <include name="tearDown"/>
+          <include name="test_read_data"/>
         </methods>
-      </class> <!-- chaldal_test.test_case -->
+      </class> <!-- Excel_DataDrivenTest.ReadingDataFromExcel2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
