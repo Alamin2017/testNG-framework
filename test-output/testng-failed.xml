@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Excel_DataDrivenTest.ReadingDataFromExcel2">
+      <class name="Excel_DataDrivenTest.DataDrivenTest">
         <methods>
-          <include name="test_read_data"/>
+          <include name="tearDown"/>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="goto_nopcom_website"/>
         </methods>
-      </class> <!-- Excel_DataDrivenTest.ReadingDataFromExcel2 -->
+      </class> <!-- Excel_DataDrivenTest.DataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
