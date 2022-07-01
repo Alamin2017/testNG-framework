@@ -15,18 +15,12 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Products {
+public class Products extends base{
 	
-	public static WebDriver driver;
 	@Test
 	public void product_items() throws InterruptedException
 	{
-		ChromeOptions ops = new ChromeOptions();
-		ops.addArguments("--disable-notifications");	
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver(ops);
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		
 		driver.get("https://www.daraz.com.bd/");	
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='q']")).sendKeys("camera"+Keys.ENTER);

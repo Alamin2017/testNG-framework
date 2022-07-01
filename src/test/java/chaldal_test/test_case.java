@@ -20,7 +20,7 @@ public class test_case extends base{
 		Thread.sleep(3000);
 		System.out.println("Image is Exist:"+image);
 	}
-	@Test(priority=2)
+	@Test(priority=2,description="test sign_in_out_using_number ")
 	public void test_sign_in_out_using_number() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//button[normalize-space()='Sign in']")).click();
@@ -39,7 +39,7 @@ public class test_case extends base{
 		driver.findElement(By.xpath("//div[@class='isLoggedIn top-header']//li[6]")).click();
 		Thread.sleep(4000);
 	}
-	@Test(priority=3)
+	@Test(priority=3,description="test help menu check ")
 	public void test_help_menu() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//*[@id='page']/div/div[3]/div/div[1]/div[1]/div[3]/a/span")).click();
@@ -47,7 +47,7 @@ public class test_case extends base{
 		driver.navigate().back();
 		Thread.sleep(3000);
 	}
-	@Test(priority=4)
+	@Test(priority=4,description="test popular product count shows products")
 	public void test_popular_product_count_shows_products() throws InterruptedException
 	{
 		Thread.sleep(3000);
@@ -74,7 +74,7 @@ public class test_case extends base{
 		}
 		Thread.sleep(3000);
 	}
-	@Test(priority=5)
+	@Test(priority=5,description="test change language")
 	public void test_change_language() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//p[contains(text(),'বাং')]")).click();
@@ -84,7 +84,7 @@ public class test_case extends base{
 		 Set<Cookie> cookies=driver.manage().getCookies();
 		 System.out.println("Size of Cookies:"+cookies.size());
 	}
-	@Test(priority=6)
+	@Test(priority=6,description="test termm of services")
 	public void test_Terms_of_Service() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//button[normalize-space()='Sign in']")).click();
@@ -101,7 +101,7 @@ public class test_case extends base{
 		driver.switchTo().window(winHandleBefore);
 		Thread.sleep(4000);
 	}
-	@Test(priority=7)
+	@Test(priority=7,description="test privacy policy")
 	public void test_Privacy_Policy() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//button[normalize-space()='Sign in']")).click();
@@ -119,7 +119,7 @@ public class test_case extends base{
 		Thread.sleep(4000);
 
 	}
-	@Test(priority=8)
+	@Test(priority=8,description="test product details add to cart without login")
 	public void test_product_details_add_to_cart_without_login() throws InterruptedException
 	{
 		driver.findElement(By.xpath("//input[@name='search_term_string']")).sendKeys("potato"+Keys.ENTER);
@@ -133,7 +133,7 @@ public class test_case extends base{
 		driver.findElement(By.xpath("//*[@id='placeOrderButton']/span[1]")).click();
 		Thread.sleep(4000);
 	}
-	@Test(priority=9)
+	@Test(priority=9,description="test cuurent location live chat")
 	public void test_current_location_live_chat() throws InterruptedException
 	{
 		Thread.sleep(4000);
@@ -147,7 +147,7 @@ public class test_case extends base{
 		driver.findElement(By.xpath("//button[@class='chatWindowCloseBtn border-radius-small']")).click();
 		Thread.sleep(4000);
 	}
-	@Test(priority=10)
+	@Test(priority=10,description="test product categories total")
 	public void test_product_categories_total() throws InterruptedException
 	{
 		JavascriptExecutor js = (JavascriptExecutor) driver;
@@ -164,7 +164,7 @@ public class test_case extends base{
 
 	}
 	
-	@Test(priority=11)
+	@Test(priority=11,description="test product pharmacy total")
 	public void test_product_pharmacy_total() throws InterruptedException
 	{
 		Thread.sleep(2000);
