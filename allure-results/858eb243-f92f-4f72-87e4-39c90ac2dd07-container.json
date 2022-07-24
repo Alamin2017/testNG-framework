@@ -1,1 +1,0 @@
-{"uuid":"858eb243-f92f-4f72-87e4-39c90ac2dd07","name":"chaldal_test.base.tearDown","children":["8626f091-98db-4c31-950a-b3b5edea232a"],"description":"","befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1655491444054,"stop":1655491444193}],"start":1655491444054,"stop":1655491444193}

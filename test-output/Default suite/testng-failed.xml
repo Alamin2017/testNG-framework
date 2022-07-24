@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="daraz_test.Products">
+      <class name="Excel_DataDrivenTest.DataDrivenTest">
         <methods>
-          <include name="gotodaraz"/>
-          <include name="product_items"/>
           <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="goto_nopcom_website"/>
         </methods>
-      </class> <!-- daraz_test.Products -->
+      </class> <!-- Excel_DataDrivenTest.DataDrivenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

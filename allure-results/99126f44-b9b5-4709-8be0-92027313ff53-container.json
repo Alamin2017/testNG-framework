@@ -1,1 +1,0 @@
-{"uuid":"99126f44-b9b5-4709-8be0-92027313ff53","name":"daraz_test.base.gotodaraz","children":["f364478a-d728-49fb-95db-5dbe67f642b4"],"description":"","befores":[{"name":"gotodaraz","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1656686311380,"stop":1656686314150}],"afters":[],"start":1656686311379,"stop":1656686314151}

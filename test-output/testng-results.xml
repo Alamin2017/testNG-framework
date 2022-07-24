@@ -1,55 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-01T22:06:09 BDT" name="Suite" finished-at="2022-07-01T22:06:27 BDT" duration-ms="18527">
+  <suite started-at="2022-07-12T21:28:34 BDT" name="Default suite" finished-at="2022-07-12T21:29:54 BDT" duration-ms="80073">
     <groups>
     </groups>
-    <test started-at="2022-07-01T22:06:09 BDT" name="ChromeTest" finished-at="2022-07-01T22:06:22 BDT" duration-ms="13077">
-      <class name="cross_browser.Products">
-        <test-method is-config="true" signature="open_cross_browser(java.lang.String)[pri:0, instance:cross_browser.Products@d554c5f]" started-at="2022-07-01T22:06:09 BDT" name="open_cross_browser" finished-at="2022-07-01T22:06:11 BDT" duration-ms="2377" status="PASS">
+    <test started-at="2022-07-12T21:28:34 BDT" name="Default test" finished-at="2022-07-12T21:29:54 BDT" duration-ms="80073">
+      <class name="Excel_DataDrivenTest.DataDrivenTest">
+        <test-method is-config="true" signature="goto_nopcom_website()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:28:34 BDT" name="goto_nopcom_website" finished-at="2022-07-12T21:28:42 BDT" duration-ms="8052" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goto_nopcom_website -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:28:42 BDT" name="loginTest" data-provider="LoginData" finished-at="2022-07-12T21:29:03 BDT" duration-ms="20963" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_cross_browser -->
-        <test-method signature="product_items()[pri:0, instance:cross_browser.Products@d554c5f]" started-at="2022-07-01T22:06:11 BDT" name="product_items" finished-at="2022-07-01T22:06:22 BDT" duration-ms="10413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- product_items -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:cross_browser.Products@d554c5f]" started-at="2022-07-01T22:06:22 BDT" name="tearDown" finished-at="2022-07-01T22:06:22 BDT" duration-ms="134" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:03 BDT" name="tearDown" finished-at="2022-07-12T21:29:03 BDT" duration-ms="73" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- cross_browser.Products -->
-    </test> <!-- ChromeTest -->
-    <test started-at="2022-07-01T22:06:09 BDT" name="FireFoxTest" finished-at="2022-07-01T22:06:27 BDT" duration-ms="18527">
-      <class name="cross_browser.Products">
-        <test-method is-config="true" signature="open_cross_browser(java.lang.String)[pri:0, instance:cross_browser.Products@6c284af]" started-at="2022-07-01T22:06:09 BDT" name="open_cross_browser" finished-at="2022-07-01T22:06:13 BDT" duration-ms="4449" status="PASS">
+        <test-method is-config="true" signature="goto_nopcom_website()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:03 BDT" name="goto_nopcom_website" finished-at="2022-07-12T21:29:12 BDT" duration-ms="9046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goto_nopcom_website -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:12 BDT" name="loginTest" data-provider="LoginData" finished-at="2022-07-12T21:29:22 BDT" duration-ms="9988" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[admin@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adm]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- open_cross_browser -->
-        <test-method signature="product_items()[pri:0, instance:cross_browser.Products@6c284af]" started-at="2022-07-01T22:06:13 BDT" name="product_items" finished-at="2022-07-01T22:06:26 BDT" duration-ms="13195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- product_items -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:cross_browser.Products@6c284af]" started-at="2022-07-01T22:06:26 BDT" name="tearDown" finished-at="2022-07-01T22:06:27 BDT" duration-ms="820" status="PASS">
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:22 BDT" name="tearDown" finished-at="2022-07-12T21:29:22 BDT" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- cross_browser.Products -->
-    </test> <!-- FireFoxTest -->
-  </suite> <!-- Suite -->
+        <test-method is-config="true" signature="goto_nopcom_website()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:22 BDT" name="goto_nopcom_website" finished-at="2022-07-12T21:29:28 BDT" duration-ms="5405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goto_nopcom_website -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:28 BDT" name="loginTest" data-provider="LoginData" finished-at="2022-07-12T21:29:38 BDT" duration-ms="9745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adm@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:38 BDT" name="tearDown" finished-at="2022-07-12T21:29:38 BDT" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="goto_nopcom_website()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:38 BDT" name="goto_nopcom_website" finished-at="2022-07-12T21:29:43 BDT" duration-ms="5884" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goto_nopcom_website -->
+        <test-method signature="loginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:43 BDT" name="loginTest" data-provider="LoginData" finished-at="2022-07-12T21:29:54 BDT" duration-ms="10547" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adm@yourstore.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[adm]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Excel_DataDrivenTest.DataDrivenTest@221a3fa4]" started-at="2022-07-12T21:29:54 BDT" name="tearDown" finished-at="2022-07-12T21:29:54 BDT" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Excel_DataDrivenTest.DataDrivenTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
